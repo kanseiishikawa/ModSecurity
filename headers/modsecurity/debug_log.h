@@ -48,7 +48,7 @@ class DebugLog {
     virtual void setDebugLogLevel(int level);
     virtual void setDebugLogFile(const std::string &fileName, std::string *error);
     virtual bool reopenDebugLogFile(std::string *error);
-    virtual const std::string& getDebugLogFile();
+    virtual char* getDebugLogFile();
     virtual int getDebugLogLevel();
 
     int m_debugLevel;

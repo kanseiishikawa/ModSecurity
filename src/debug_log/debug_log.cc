@@ -62,8 +62,8 @@ bool DebugLog::isLogLevelSet() {
 }
 
 
-const std::string& DebugLog::getDebugLogFile() {
-    return m_fileName;
+const char* DebugLog::getDebugLogFile() {
+    return m_fileName.c_str();
 }
 
 
