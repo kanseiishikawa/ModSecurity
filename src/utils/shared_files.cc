@@ -23,6 +23,7 @@
 #endif
 
 #if defined(_MSC_VER) && !defined(_CRT_SECURE_NO_DEPRECATE)
+// NOSONAR: This is a system configuration macro, not a constant value.
 #define _CRT_SECURE_NO_DEPRECATE 1
 #endif
 
